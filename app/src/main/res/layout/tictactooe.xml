@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/LinearLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/Button00" android:text="" android:layout_width="0dp" android:layout_weight="1" android:layout_height="100dp"></Button>
+        <Button android:id="@+id/Button01" android:text="" android:layout_width="0dp" android:layout_weight="1" android:layout_height="100dp"></Button>
+        <Button android:id="@+id/Button02" android:text="" android:layout_width="0dp" android:layout_weight="1" android:layout_height="100dp"></Button>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/LinearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/Button10" android:text="" android:layout_width="0dp" android:layout_weight="1" android:layout_height="100dp"></Button>
+        <Button android:id="@+id/Button11" android:text="" android:layout_width="0dp" android:layout_weight="1" android:layout_height="100dp"></Button>
+        <Button android:id="@+id/Button12" android:text="" android:layout_width="0dp" android:layout_weight="1" android:layout_height="100dp"></Button>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/LinearLayout3" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <Button android:id="@+id/Button20" android:text="" android:layout_weight="1" android:layout_height="100dp" android:layout_width="0dp"></Button>
+        <Button android:id="@+id/Button21" android:text="" android:layout_weight="1" android:layout_height="100dp" android:layout_width="0dp"></Button>
+        <Button android:id="@+id/Button22" android:text="" android:layout_weight="1" android:layout_height="100dp" android:layout_width="0dp"></Button>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/txtmsg"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:gravity="bottom"
+
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/message_feed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:layout_marginBottom="60dp"
+            android:footerDividersEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/send_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editor_background"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:background="@drawable/edit_text_background_blue"
+                android:textCursorDrawable="@color/light_gray"
+                android:textColor="@android:color/white"
+                android:singleLine="true"
+                android:imeOptions="actionDone" />
+
+            <Button
+                android:id="@+id/send"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/ic_action_send_now" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+

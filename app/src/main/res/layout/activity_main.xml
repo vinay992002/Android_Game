@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/thost_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/host_button"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Tic Tac host" />
+
+    <Button
+        android:id="@+id/tjoin_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="50sp"
+        android:layout_weight="1"
+        android:background="@drawable/join_button"
+
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Tic tac Join" />
+    <Button
+        android:id="@+id/bhost_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Bingo Host"
+        android:textSize="50sp"
+        android:layout_weight="1"
+        android:background="@drawable/host_button"
+
+        />
+    <Button
+        android:id="@+id/bjoin_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Bingo Join"
+        android:textSize="50sp"
+        android:layout_weight="1"
+        android:background="@drawable/join_button"
+
+        />
+
+</LinearLayout>
